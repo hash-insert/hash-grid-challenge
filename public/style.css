@@ -5,10 +5,13 @@
   --text-secondary: #ffffff;
   --text-highlighter: #ffd234;
   --bg-primary: #ffffff;
-  --bg-secondary: #000000;
+  --bg-secondary: #202020;
+  --bg-border: rgba(0, 0, 0, 0.25);
   --bg-highlighter: #ffd234;
-  --transition-speed: 700ms;
-}
+  --bg-button: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+  --bg-button-face: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+  --border-primary: #0004;
+  --border-secondary: #0009;}
 
 body {
   color: var(--text-secondary);
