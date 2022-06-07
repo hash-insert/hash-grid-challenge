@@ -12,8 +12,12 @@
   --bg-button-face: linear-gradient(90deg, #2d2d2d, #4d4d4d);
   --border-primary: #0004;
   --border-secondary: #0009;
-  --bg-text-value: #a7a7a7;
- 
+  --bg-text-value: #a7af7c;
+  --bg-equal-button: #2196f3;
+  --bg-equal-face: linear-gradient(90deg, #1479c9, #ffffff5c);
+  --bg-clear-button: #f00;
+  --bg-clear-face: linear-gradient(90deg, #d20000, #ffffff5c);
+
 }
 
 body {
@@ -33,7 +37,7 @@ padding: 0%;
   border-radius: 10px;
   min-width: 300px;
   min-height: 400px;
-  box-shadow: inset 5px 5px 15px var(--bg-border);
+  box-shadow: inset 10px 10px 25px var(--bg-border);
   padding: 40px 30px 30px;
 }
 
@@ -84,7 +88,12 @@ padding: 0%;
   border-radius: 10px;
   margin: 4px;
   background: var(--bg-button);
-  
+  user-select: none;
+  cursor: pointer;
+}
+
+.calculator span:active {
+  filter:brightness(2);
 }
 
 .calculator span i {
@@ -106,3 +115,27 @@ width: 168px;
 
 }
 
+.calculator .equal {
+  background:var(--bg-equal-button);
+
+}
+
+.calculator .equal::before {
+  background:  linear-gradient(90deg, #1479c9, #ffffff5c);;
+  border-left: 1px solid var(--bg-equal-button);
+  border-bottom: 1px solid var(--bg-equal-button);
+  border-top: 1px solid var(--bg-equal-face);
+
+}
+
+.calculator .clear {
+  background:var(--bg-clear-button);
+  
+}
+
+.calculator .clear::before {
+  background: linear-gradient(90deg, #d20000, #fabfbf5c);
+  border-left: 1px solid var(--bg-clear-button);
+  border-bottom: 1px solid var(--bg-clear-button);
+  border-top: 1px solid var(--bg-clear-face);
+}
