@@ -13,6 +13,11 @@
   --border-primary: #0004;
   --border-secondary: #0009;
   --bg-text-value: #a7af7c;
+  --bg-equal-button: #2196f3;
+  --bg-equal-face: linear-gradient(90deg, #1479c9, #ffffff5c);
+  --bg-clear-button: #f00;
+  --bg-clear-face: linear-gradient(90deg, #d20000, #ffffff5c);
+
 }
 
 body {
@@ -46,8 +51,41 @@ body {
   margin-bottom: 10px;
   border-radius: 10px;
   height: 100px;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   padding: 10px;
   border: none;
   background-color: var(--bg-text-value);
+  grid-column: span 4;
+}
+
+.calculator span {
+  display: grid;
+  position: relative;
+  background: var(--bg-button);
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.calculator span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: var(--bg-button-face);
+  border-radius: 10px;
+  border-left: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  border-top: 1px solid var(--border-secondary);
+}
+
+
+.calculator span i {
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
