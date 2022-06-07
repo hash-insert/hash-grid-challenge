@@ -2,6 +2,8 @@
 
 This challenge expects to create a calculator. It is the layout and appearance that is important, not functionality. The page does not have to be responsive.
 
+# Output
+![Calculator Using Grid Layout](./Calculator Using Grid Layout.png)
 
 ### Requirements:
 - use `var(--bg-highlighter)` for the exact color.
