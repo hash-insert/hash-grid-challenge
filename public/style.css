@@ -12,6 +12,11 @@
   --bg-button-face: linear-gradient(90deg, #2d2d2d, #4d4d4d);
   --border-primary: #0004;
   --border-secondary: #0009;
+  --bg-text-value: #a7af7c;
+  --bg-equal-button: #2196f3;
+  --bg-equal-face: linear-gradient(90deg, #1479c9, #ffffff5c);
+  --bg-clear-button: #f00;
+  --bg-clear-face: linear-gradient(90deg, #d20000, #ffffff5c);
 }
 
 
@@ -86,8 +91,10 @@ body {
 .calculator .clear{
   grid-column: span 2;
   width: 93%;
+  background-color:var(--bg-clear-button) ;
 }
 .calculator .plus{
   grid-row: span 2;
   height: 92%;
 }
+
