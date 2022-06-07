@@ -1,6 +1,6 @@
-# Hash Menus Challenges
+# Hash Grid Challenge
 
-This challenge expects to create a calculator. It is the layout and appearance that is important, not functionality. The page should be responsive.
+This challenge expects to create a calculator. It is the layout and appearance that is important, not functionality. The page does not have to be responsive.
 
 
 ### Requirements:
