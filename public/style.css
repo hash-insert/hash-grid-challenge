@@ -12,6 +12,12 @@
   --bg-button-face: linear-gradient(90deg, #2d2d2d, #4d4d4d);
   --border-primary: #0004;
   --border-secondary: #0009;
+  --bg-text-value: #a7af7c;
+  --bg-equal-button: #2196f3;
+  --bg-equal-face: linear-gradient(90deg, #1479c9, #ffffff5c);
+  --bg-clear-button: #f00;
+  --bg-clear-face: linear-gradient(90deg, #d20000, #ffffff5c);
+
 }
 
 body {
@@ -19,4 +25,80 @@ body {
   background-color: var(--bg-secondary);
   margin: 0;
   padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+.container{
+  background-color: var(--bg-border);
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 400px;
+  box-shadow: inset 5px 5px 15px var(--bg-border);
+  padding: 40px 30px 30px;
+}
+.calculator{
+  display: grid;
+  position: relative;
+}
+.calculator .value{
+  position: relative;
+  left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  background-color: var(--bg-text-value);
+  grid-column: span 4;
+}
+.calculator span {
+  display: grid;
+  position: relative;
+  background: var(--bg-button);
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  border-radius: 10px;
+  margin: 8px;
+}
+.calculator span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: var(--bg-button-face);
+  border-radius: 10px;
+  border-left: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  border-top: 1px solid var(--border-secondary);
+}
+.calculator span i {
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.calculator .numclear {
+  grid-column: span 2;
+  width: 180px;
+  background: var(--bg-clear-button);
+
+}
+.calculator .numclear::before{
+  background: var(--bg-clear-face);
+}
+.calculator .numplus{
+  grid-row: span 2;
+  height: 180px;
+}
+ .calculator .numequal{
+  background: var(--bg-equal-button);
+}
+.calculator .numequal::before{
+  background: var(--bg-equal-face);
 }
