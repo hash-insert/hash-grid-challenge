@@ -94,7 +94,7 @@ body{
 }
 .calulator-display .add{
   grid-row: span 2;
-  height: 175px;
+  height: 174px;
 
 }
 .calulator-display .equal{
