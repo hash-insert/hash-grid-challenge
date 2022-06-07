@@ -3,7 +3,7 @@
 This challenge expects to create a calculator. It is the layout and appearance that is important, not functionality. The page does not have to be responsive.
 
 # Output
-![Calculator Using Grid Layout](./Calculator Using Grid Layout.png)
+![Calculator Using Grid Layout](https://github.com/hash-insert/hash-grid-challenge/blob/main/Calculator%20Using%20Grid%20Layout.png?raw=true)
 
 ### Requirements:
 - use `var(--bg-highlighter)` for the exact color.
