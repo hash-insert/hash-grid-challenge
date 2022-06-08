@@ -38,6 +38,7 @@ body {
   min-height: 400px;
   box-shadow: inset 5px 5px 15px var(--bg-border);
   padding: 40px 30px 30px;
+  /* box-shadow: 10px 10px 25px var(--bg-clear-button); */
 }
 .calculator{
   display: grid;
@@ -64,6 +65,11 @@ body {
   place-items: center;
   border-radius: 10px;
   margin: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+.calculator span:active { 
+  filter: brightness(1.5);
 }
 .calculator span::before {
   content: "";
